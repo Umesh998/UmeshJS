@@ -1,10 +1,11 @@
 function Chiron()
 {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-    for(let x in month)
+//Array of month
+    for(let x in month)  // for in syntax ()
     {
         console.log(x);
+        console.log(obj[x]);
     }
 
     let ume = 'Bugatti';
@@ -17,10 +18,11 @@ function Chiron()
 
 function agera()
 {
-    let cars = { Bugatti: 'Chiron', Porsche: 'dakar', Koenigsegg: 'Agera' };
+    let obj = { Bugatti: 'Chiron', Porsche: 'dakar' };
 
-    for(let y of cars)
+    for(let y in obj)
     {
         console.log(y);
+        console.log(obj[y]);
     }
 } 
