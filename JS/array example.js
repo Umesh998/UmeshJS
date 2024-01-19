@@ -3,12 +3,12 @@
 //dynamic lable 
 function lable(ride) {
     let label = document.createElement('label');
-    label.innerText = ride + '\n';
+    label.innerText = ride + '\n' ;
     document.body.appendChild(label);
 }
 
 
-// array 1 example of push with for in
+// array 1 example of push with for of 
 function forcarspush() {
     let cars = ["Ferarri", "Porsche", "Bentley", "Bugatti", "Ford", "Koenigsegg"];
 
@@ -20,11 +20,11 @@ function forcarspush() {
 
 }
 
-// array 1 example of pop with for in 
+// array 1 example of pop with for of 
 function forcarspop() {
     let cars = ["Ferarri", "Porsche", "Bentley", "Bugatti", "Ford", "Koenigsegg", "Mercedes", "BMW"];
 
-    cars.pop("BMW");
+    cars.pop();
 
     for (let ride of cars) {
         lable(ride);
@@ -59,16 +59,16 @@ function forbikespop() {
 // array 1 example of sort with for of
 
 function plantz() {
-    let plants = ["Tulsi", "Mogra", "Mint", "Aloevera", "Jasmine"];
+    let plants = ["Tulsi", "Mogra", 22, "Mint", "Aloevera", 12,  "012", "Jasmine"];
     plants.sort();
-
-    for (let ride of plants) {
-        lable(ride);
-    }
+ for (let ride of plants){
+    lable(ride);
+ }
+   
 }
 
 
-//array 1 example of reverse 
+// array 1 example of reverse 
 
 function plantze() {
     let plants = ["Tulsi", "Mogra", "Mint", "Aloevera", "Jasmine"];
@@ -78,6 +78,16 @@ function plantze() {
         lable(ride);
     }
 }
+
+// function plantze() {
+//     let plants = ["Tulsi", "Mogra", "Mint", "Aloevera", "Jasmine"];
+//     plants.reverse();
+
+//     for (let ride in plants) {
+//         lable(ride);
+//     }
+// }
+
 
 //array 2 example of sort with for in 
 
@@ -104,4 +114,55 @@ function friuts(){
     
 }
 
-//a
+function friutas(){
+    let fruitsze = ["Banana", "Guava", "Grapes", "Jamun", "Orange"];
+
+   let fruiiits = fruitsze.join(' and ');
+
+    for(let y of fruiiits){
+        lable(y);
+    }
+    
+
+
+
+
+}
+
+function splicee(){
+    let mobile = ["Xiaomi", "Apple", "Samsung", "Redmi", "Moto"];
+
+    mobile.splice(1 , 3);
+
+    for(let e of mobile){
+        lable(e);
+    }
+}
+
+
+
+
+
+
+function slicee(){
+    let mobil = ["Xiaomi", "Apple", "Samsung", "Redmi", "Moto"];
+
+    mobil.slice(1 , 3);
+
+    for(let e of mobil){
+        lable(e);
+    }
+}
+
+
+
+
+function update(){
+    let updatevalues = ["Umesh", "Kunal", "Ravi", "Shavi", "Funal", "Kumesh"];
+
+    updatevalues[2]  = "Ramesh";
+
+    for(let d of updatevalues){
+        lable(d);
+    }
+}

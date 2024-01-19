@@ -11,6 +11,8 @@ function multiplication() {
     let product = num1 * num2;
     document.getElementById("result").innerHTML = "The product of the two numbers is: " + product;
 }
+
+
 function division() {
     let num1 = Number(document.getElementById("num1").value);
     let num2 = Number(document.getElementById("num2").value);
