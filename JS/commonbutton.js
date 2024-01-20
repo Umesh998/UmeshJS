@@ -10,30 +10,30 @@ let myArray = [];
 
 function push(storevalue) {
 
-   myArray.push(storevalue);
+    myArray.push(storevalue);
 
-  
-   forbutton('clicked time :' + myArray.length);
-   
 
-   forbutton(myArray);
+    forbutton('clicked time :' + myArray.length);
+
+
+    forbutton(myArray);
 }
 
 
 function pop() {
 
-  myArray.pop();
-  forbutton(myArray);
+    myArray.pop();
+    forbutton(myArray);
 
 }
 
-function main(anyone){
-     let storevalue = document.getElementById('textid').value;
+function main(anyone) {
+    let storevalue = document.getElementById('textid').value;
 
-if (anyone == 'insert') {
-    push(storevalue);
-}
-    else if (anyone == 'remove'){
+    if (anyone == 'insert') {
+        push(storevalue);
+    }
+    else if (anyone == 'remove') {
         pop();
     }
 

@@ -44,5 +44,5 @@ function oneclass() {
 function multipleclass() {
     document.getElementById('secondbutton').classList.add('buttonHover', 'btn');
     // document.getElementById('secondbutton').classList.remove('buttonhtml');
-}
+} 
 
