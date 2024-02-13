@@ -11,6 +11,7 @@ function addition() {
 }
 
 
+
 //multiplication
 function multiplication() {
     let value3 = document.getElementById('Box3');
@@ -41,4 +42,16 @@ function division() {
     let totalvalue4 = Number(value7.value) / Number(value8.value);
 
     document.getElementById('lbl4').innerText = totalvalue4;
+}
+
+
+//concate
+function concate() {
+    let value9 = document.getElementById('Box9');
+    let value10 = document.getElementById('Box10');
+
+
+    let totalvalue5 = Text(value9.value) + Text(value10.value);
+
+    document.getElementById('lbl5').innerText = totalvalue5;
 }
